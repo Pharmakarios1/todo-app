@@ -11,6 +11,7 @@
 
 body{
     background-color:#0D0714;
+    font-family: "Plus Jakarta Sans", sans-serif;
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -68,10 +69,35 @@ body{
 
 .todo-wrapper{
     margin: 50px 0;
+
+   
 }
 
 .counter{
     margin: 10px auto;
     color: white;
     padding: 0 4px;
+}
+
+.todo-item__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todo-item{
+    background-color:#15101C;
+    padding: 10px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    color: #9e78cf;
+}
+
+.marks{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
