@@ -18,14 +18,32 @@ body{
     
 }
 
+ul{
+    list-style: none;
+    user-select: none;
+}
+
+ul li:hover{
+    background-color: hsl(268, 4%, 5%);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+.container{
+    width: 450px;
+    min-height: 100vh;
+    background-color: #1D1825;
+    border-radius: 10px;
+    position: absolute;
+    top: 4%;
+    left: 35%;
+
+
+    padding: 30px 50px;
+}
 
 .app__wrapper{
     width: 350px;
     min-height: 50vh;
-    position: absolute;
-    top: 20%;
-    left: 35%;
-
 }
 
 .input__wrapper{
@@ -38,7 +56,7 @@ body{
 
     /* sticky at the top if more todos are added */
     position: sticky;
-    top: 0%;
+    top: 10%;
     left: 35%;
     z-index: 10;
 }
@@ -74,6 +92,14 @@ body{
     justify-content: center;
 }
 
+
+.app__wrapper button:hover{
+    background-color: rgba(158, 120, 207, .9);
+    transition: all 0.3s ease;
+}
+
+
+
 .todo-wrapper{
     margin: 50px 0;
 
@@ -97,6 +123,7 @@ body{
     padding: 10px 15px;
 
     display: flex;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
@@ -109,6 +136,12 @@ body{
     gap: 10px;
 }
 
+
+.marks img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
 .done-text{
     color:#78CFB0;
     text-decoration: line-through;
