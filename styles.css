@@ -34,7 +34,7 @@ ul li:hover{
     background-color: #1D1825;
     border-radius: 10px;
     position: absolute;
-    top: 15%;
+    top: 2%;
     left: 35%;
 
 
@@ -147,6 +147,10 @@ ul li:hover{
     height: 20px;
     cursor: pointer;
 }
+
+.section-one{
+    margin-top: 30px;
+}
 .done-text{
     color:#78CFB0;
     text-decoration: line-through;
@@ -204,6 +208,12 @@ ul li:hover{
     transform: scale(1.8);
     transition: all 0.5s ease-in-out;
 }
+
+#todo-count{
+    font-size: 14px;
+    font-weight: 600;
+    color: #9e78cf;
+}
 /* media-Queries */
 
 
@@ -214,7 +224,7 @@ ul li:hover{
         background-color: #1D1825;
         border-radius: 10px;
         position: absolute;
-        top: 15%;
+        top: 2%;
         left: 21%;
     
     
