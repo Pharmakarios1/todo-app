@@ -30,11 +30,11 @@ ul li:hover{
 }
 .container{
     width: 450px;
-    min-height: 100vh;
+    min-height: 30vh;
     background-color: #1D1825;
     border-radius: 10px;
     position: absolute;
-    top: 4%;
+    top: 15%;
     left: 35%;
 
 
@@ -43,7 +43,7 @@ ul li:hover{
 
 .app__wrapper{
     width: 350px;
-    min-height: 50vh;
+    min-height: 30vh;
 }
 
 .input__wrapper{
@@ -55,10 +55,10 @@ ul li:hover{
 
 
     /* sticky at the top if more todos are added */
-    position: sticky;
+    /* position: sticky;
     top: 10%;
     left: 35%;
-    z-index: 10;
+    z-index: 10; */
 }
 
 .app__wrapper input{
@@ -98,10 +98,12 @@ ul li:hover{
     transition: all 0.3s ease;
 }
 
-
+.section-one{
+    margin-top: 50px;
+}
 
 .todo-wrapper{
-    margin: 50px 0;
+    margin: 10px 0;
 
    
 }
@@ -123,7 +125,7 @@ ul li:hover{
     padding: 10px 15px;
 
     display: flex;
-    height: 60px;
+    min-height: 60px;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
@@ -145,4 +147,29 @@ ul li:hover{
 .done-text{
     color:#78CFB0;
     text-decoration: line-through;
+}
+
+
+/* media-Queries */
+
+
+@media (max-width: 600px) {
+    .container{
+        width: 380px;
+        min-height: 30vh;
+        background-color: #1D1825;
+        border-radius: 10px;
+        position: absolute;
+        top: 15%;
+        left: 8%;
+    
+    
+        padding: 30px 50px;
+    }
+        
+    .app__wrapper{
+        width: 100%;
+        min-height: 30vh;
+    }
+
 }
