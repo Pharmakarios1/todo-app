@@ -110,6 +110,12 @@ ul li:hover{
    
 }
 
+.done-wrapper{
+    margin: 10px 0;
+
+   
+}
+
 .counter{
     margin: 10px auto;
     color: white;
@@ -122,7 +128,26 @@ ul li:hover{
     gap: 15px;
 }
 
+.done-item__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .todo-item{
+    background-color:#15101C;
+    padding: 10px 15px;
+
+    display: flex;
+    min-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    color: #9e78cf;
+    margin-bottom: 15px;
+}
+
+.done-item{
     background-color:#15101C;
     padding: 10px 15px;
 

@@ -9,7 +9,7 @@ function HandleAdd() {
   if (!todoInput.value) {
     alert("Please add your todo(s)!");
   } else {
-    const todoList = document.createElement("ul");
+    let todoList = document.createElement("ul");
     const buttons = document.createElement("div");
 
     buttons.className = "marks";
@@ -29,9 +29,8 @@ function HandleAdd() {
   todoInput.value = "";
 }
 
-// totalCount.textContent = "6";
-function HandleDelete() {
-  todoSectionOne.removeChild();
-}
-
 // function HandleAdd() {}
+
+function HandleDelete() {
+  todoList.removeChild(li);
+}
