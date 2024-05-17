@@ -2,7 +2,7 @@ const todoInput = document.querySelector("#todo-input");
 const todoSectionOne = document.querySelector(".section-one");
 
 function HandleAdd() {
-  if (todoInput == "") {
+  if (todoInput.value == "") {
     alert("You must write something");
   } else {
     const todoWrapper = document.createElement("div");
