@@ -5,16 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/eaab1623f5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="app__wrapper">
-      <div class="input__wrapper">
-        <input type="text" name="" id="" placeholder="Add a new task" />
-        <button><img src="./img/Plus.png" alt="" /></button>
+    <div class="side-bar">
+      <div class="profile">
+        <img src="/img/user.jpg" alt="" />
+        <p class="user-name">Blessed Akhigbe</p>
       </div>
-      <div class="todo-wrapper">
-        <p class="counter">Tasks to do - 4</p>
-        <div class="todo-item__wrapper"></div>
+      <div class="github">
+        <a href="https://github.com/pharmakarios1" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <div class="LinkedIn">
+        <a
+          href="https://www.linkedin.com/in/blessed-akhigbe-968509b6/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="app__wrapper">
+        <div class="input__wrapper">
+          <input
+            type="text"
+            name="text"
+            id="todo-input"
+            placeholder="Add a new task"
+          />
+          <button type="submit" class="btn" onclick="HandleAdd()">
+            <img src="./img/Plus.png" alt="" />
+          </button>
+        </div>
+        <div class="section-one">
+          <!-- <div class="todo-wrapper">
+            <p class="counter">Tasks to do - 4</p>
+            <ul class="todo-item__wrapper">
+              <li class="todo-item">
+                <p>To study React Fundamentals</p>
+                <div class="marks">
+                  <img src="./img/check (2).png" alt="checkmark" />
+                  <img src="./img/delete.png" alt="delete" />
+                </div>
+              </li>
+              <li class="todo-item">
+                <p>To study React Fundamentals</p>
+                <div class="marks">
+                  <img src="./img/check (2).png" alt="checkmark" />
+                  <img src="./img/delete.png" alt="delete" />
+                </div>
+              </li>
+              <li class="todo-item">
+                <p>To study React Fundamentals</p>
+                <div class="marks">
+                  <img src="./img/check (2).png" alt="checkmark" />
+                  <img src="./img/delete.png" alt="delete" />
+                </div>
+              </li>
+              <li class="todo-item">
+                <p>To study React Fundamentals</p>
+                <div class="marks">
+                  <img src="./img/check (2).png" alt="checkmark" />
+                  <img src="./img/delete.png" alt="delete" />
+                </div>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        <div class="section-two">
+          <!-- <div class="todo-wrapper done-wrapper">
+            <p class="counter">Done - 1</p>
+            <div class="todo-item__wrapper">
+              <div class="todo-item">
+                <p class="done-text">To study React Fundamentals</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
       </div>
     </div>
   </body>
