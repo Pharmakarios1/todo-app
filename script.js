@@ -1,24 +1,24 @@
 const todoInput = document.querySelector("#todo-input");
 const todoSectionOne = document.querySelector(".section-one");
+const todoWrapper = document.querySelector(".todo-wrapper");
 
 function HandleAdd() {
   if (todoInput.value == "") {
-    alert("You must write something");
+    alert("Please add your todo(s)!");
   } else {
-    const todoWrapper = document.createElement("div");
-    todoWrapper.classList.add("todo-wrapper");
     const todoList = document.createElement("ul");
-    const counter = document.createElement("p");
+    const buttons = document.createElement("div");
+
+    buttons.className = "marks";
+    buttons.innerHTML = ` <img src="./img/check (2).png" alt="checkmark" />
+    <img src="./img/delete.png" alt="delete" />`;
+
     todoList.classList.add("todo-item__wrapper");
-    counter.classList.add("counter");
     let li = document.createElement("li");
     li.classList.add("todo-item");
     li.innerText = todoInput.value;
-    todoSectionOne.appendChild(todoWrapper);
-    todoSectionOne
-      .appendChild(todoWrapper)
-      .appendChild(todoList)
-      .appendChild(li);
+
+    todoWrapper.appendChild(todoList).appendChild(li).appendChild(buttons);
   }
   todoInput.value = "";
 }
