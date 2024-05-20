@@ -100,6 +100,16 @@ ul li:hover{
     transition: all 0.3s ease;
 }
 
+.error{
+    color: red;
+    font-size: 12px;
+}
+
+
+
+
+
+
 .section-one{
     margin-top: 50px;
 }
@@ -146,6 +156,7 @@ ul li:hover{
     color: #9e78cf;
     margin-bottom: 15px;
 }
+
 
 .done-item{
     background-color:#15101C;
@@ -242,7 +253,7 @@ ul li:hover{
 /* media-Queries */
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .container{
         width: 350px;
         min-height: 30vh;

@@ -5,15 +5,19 @@ const totalCount = document.querySelector("#todo-count");
 
 totalCount.textContent = 0;
 
+function HandleDelete() {
+  todoList.removeChild(li);
+}
+
 function HandleAdd() {
   if (!todoInput.value) {
     alert("Please add your todo(s)!");
   } else {
-    let todoList = document.createElement("ul");
+    var todoList = document.createElement("ul");
     const buttons = document.createElement("div");
 
     buttons.className = "marks";
-    buttons.innerHTML = `<img src="./img/check (2).png" alt="checkmark" onclick="HandleAdd"/>
+    buttons.innerHTML = `<img src="./img/check (2).png" alt="checkmark" onclick="HandleAddToDone"/>
     <img src="./img/delete.png" alt="delete" onclick="HandleDelete()" />`;
 
     todoList.classList.add("todo-item__wrapper");
@@ -29,8 +33,4 @@ function HandleAdd() {
   todoInput.value = "";
 }
 
-// function HandleAdd() {}
-
-function HandleDelete() {
-  todoList.removeChild(li);
-}
+function HandleAddToDone() {}
