@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do-App</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <script src="./main.js" defer></script>
     <script
       src="https://kit.fontawesome.com/eaab1623f5.js"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
   <body>
     <div class="side-bar">
@@ -45,56 +46,42 @@
             id="todo-input"
             placeholder="Add a new task"
           />
-          <button type="submit" class="btn" onclick="HandleAdd()">
+          <button type="submit" class="btn" onclick="HandleSubmit()">
             <img src="./img/Plus.png" alt="" />
           </button>
         </div>
         <div class="section-one">
+          <p class="error"></p>
           <p class="counter">Tasks to do - <span id="todo-count"></span></p>
           <div class="todo-wrapper">
-            <!-- <ul class="todo-item__wrapper">
-              <li class="todo-item">
+           <ul class="todo-item__wrapper">
+              <!-- <li class="todo-item">
                 <p>To study React Fundamentals</p>
                 <div class="marks">
                   <img src="./img/check (2).png" alt="checkmark" />
                   <img src="./img/delete.png" alt="delete" />
-                </div>
+                </div> -->
               </li>
-              <li class="todo-item">
-                <p>To study React Fundamentals</p>
-                <div class="marks">
-                  <img src="./img/check (2).png" alt="checkmark" />
-                  <img src="./img/delete.png" alt="delete" />
-                </div>
-              </li>
-              <li class="todo-item">
-                <p>To study React Fundamentals</p>
-                <div class="marks">
-                  <img src="./img/check (2).png" alt="checkmark" />
-                  <img src="./img/delete.png" alt="delete" />
-                </div>
-              </li>
-              <li class="todo-item">
-                <p>To study React Fundamentals</p>
-                <div class="marks">
-                  <img src="./img/check (2).png" alt="checkmark" />
-                  <img src="./img/delete.png" alt="delete" />
-                </div>
-              </li>
-            </ul> -->
+             
+            </ul> 
           </div>
         </div>
         <div class="section-two">
-          <div class="todo-wrapper done-wrapper">
-            <p class="counter">Done - <span id="todo-count">1</p>
-            <ul class="done-item__wrapper">
-              <li class="done-item">
-                <p class="done-text">To study React Fundamentals</p>
-              </li>
-            </ul>
-          </div>
+          <!-- <div class="todo-wrapper done-wrapper">
+            <p class="counter">Done<span id="todo-count">  - 1</p>
+              <ul class="done-item__wrapper">
+                <li class="done-item">
+                  <p class="done-text">${data.task}</p>
+                  <div class="marks">
+                      <img src="./img/check (2).png" alt="checkmark" onclick = "HandleDone(this)" />
+                      <img src="./img/delete.png" alt="delete" onclick = "HandleDelete(this)"/>
+                  </div>
+                </li 
+              </ul>
+          </div> -->
         </div>
       </div>
     </div>
+    
   </body>
 </html>
